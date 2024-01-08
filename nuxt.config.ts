@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     layoutTransition: { name: 'layout', mode: 'out-in' }
   },
   ui: {
-    icons: ['heroicons'],
+    icons: ['heroicons', 'simple-icons'],
   },
   colorMode: {
     preference: 'dark'
