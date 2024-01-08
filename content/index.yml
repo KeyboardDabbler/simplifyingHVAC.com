@@ -1,0 +1,31 @@
+title: 'Simplifying HVAC: Basic Principles for Apprentices in Air Conditioning, Refrigeration, HVAC, and Electrical Work'
+description: 'Explore simplified HVAC guides tailored for apprentices. From fundamental principles and charts to hands-on training, our website empowers with basic knowledge, fostering confidence in Air Conditioning, Refrigeration, HVAC, and Electrical work.'
+navigation: false
+features:
+  title: 'Simplifying HVAC'
+  description: "The website aims to empower apprentices by providing a user friendly resource that focuses on the essentials. Whether you're diving into Air Conditioning, Refrigeration, HVAC, or Electrical work, our goal is to simplify the basics, instilling confidence in your everyday tasks."
+  items:
+    - title: 'Service'
+      description: 'Learn the art of testing without turning your cables into a spaghetti monster. Because, lets be honest, untangling wires is not in the job description.'
+      icon: 'i-heroicons-wrench-20-solid'
+      to: '/service'
+    - title: 'Electrical'
+      description: 'Get amped up as we unravel the electrifying world of HVAC circuits, where volts and watts party together.'
+      icon: 'i-heroicons-presentation-chart-line-20-solid'
+      to: '/electrical'
+    - title: 'Maintenance'
+      description: 'Join the HVAC detectives as they investigate the mysterious case of disappearing cool air. Spoiler alert: its often a duct gone rogue.'
+      icon: 'i-heroicons-sparkles-20-solid'
+      to: '/maintenance'
+    - title: 'Theory'
+      description: 'Unravel the mysteries of HVAC with principles so simple, even your coffee maker will want to join the discussion.'
+      icon: 'i-heroicons-light-bulb-20-solid'
+      to: '/theory'
+    - title: 'Tools'
+      description: "What's an HVAC technician's favorite tool? The one that turns a problem into a breeze, just like magic!"
+      icon: 'i-heroicons-wrench-screwdriver-20-solid'
+      to: '/tools'
+    - title: 'Resources'
+      description: 'Like the GPS for HVAC, these manuals and calculators will guide you through the twists and turns of system troubleshooting'
+      icon: 'i-heroicons-calculator-20-solid'
+      to: '/resources'
