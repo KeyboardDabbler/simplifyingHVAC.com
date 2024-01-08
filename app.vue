@@ -1,20 +1,33 @@
+<script setup lang="ts">
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
+
+const { seo } = useAppConfig()
+
+const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
+const { data: files } = useLazyFetch<ParsedContent[]>('/api/search.json', {
+  default: () => [],
+  server: false
+})
+
+provide('navigation', navigation)
+</script>
+
 <template>
-  <div class="text-gray-400"
-    >
-        <NuxtLoadingIndicator :height="5" :duration="3000" :throttle="400" />
-        <NuxtLayout>
-          <NuxtPage />
-        </NuxtLayout>
+  <div>
+    <Header />
+
+    <UMain>
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
+    </UMain>
+
+    <Footer />
+
+    <ClientOnly>
+      <LazyUDocsSearch :files="files" :navigation="navigation" />
+    </ClientOnly>
+
+    <UNotifications />
   </div>
 </template>
-
-<style>
-.layout-enter-active,
-.layout-leave-active {
-  transition: all 0.4s;
-}
-.layout-enter-from,
-.layout-leave-to {
-  filter: grayscale(1);
-}
-</style>
